@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detail Car</title>
+    <link rel="icon" href="./imgs/imgs/Car111.svg">
+    <link rel="stylesheet" href="./style/main.scss" />
+    <link rel="stylesheet" href="./style/output.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="body__container">
+      <header class="header" id="#">
+      <div class="header__container">
+        <nav class="navbar">
+          <button 
+            class="navbar-toggler" 
+            tupe="button" 
+            data-toggle="collapse" 
+            data-target="#navbarContent" 
+            aria-controls="navbarContent" 
+            aria-expanded="false">
+              <span class="navbar-toggler-icon">
+              </span>
+          </button>
+          <div class="navbar__search">
+            <a class="navbar__brand" href="#">
+            Morent
+            </a>
+            <div class="d-flex">
+              <form class="header-form" role="search">
+              <img src="./imgs/icons/search.svg" alt="search" class="header-form__iconS">
+              <input 
+                class="header-form__input" type="search" 
+                placeholder="Search something here"
+                aria-label="Search"
+              >
+              <button 
+                class="navbar__btn1 btn"><img src="./imgs/icons/filter.svg" alt="search" class="form__icon"></button>
+            </form>
+            <button class="navbar__btn2 " type="submit"><img src="./imgs/icons/filter.svg" alt="search" class="form__icon"></button>
+            </div>
+          </div>
+          <div class="navbar__items">
+            <div class="navbar__list">
+            <a class="navbar__icons" href="#"> 
+              <img src="./imgs/icons/Vector.svg" alt="like" class="navbar__icons-img" />
+            </a>
+            <a class="navbar__icons" href="#"> 
+              <div class="bell"></div>
+              <img src="./imgs/icons/Vector1.svg" alt="messages" class="navbar__icons-img" />
+            </a>
+            <a class="navbar__icons" href="#"> 
+              <img src="./imgs/icons/Vector 2.svg" alt="settings" class="navbar__icons-img"/>
+            </a>
+          </div>
+          <a class="profill-icon" href="#"> 
+            <img src="./imgs/imgs/Profill.jpg" alt="profill-icon" class="navbar__icons" />
+          </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+     <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-4 col-lg-3 d-none d-none d-md-block">
+        <div class="row">
+          <aside class="col-sm-6 col-md-12">
+            <form class="form">
+        <div class="form__section">
+          <p class="form__title">
+            Type
+          </p>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+            checked>
+          <label
+            class="form__check-label" for="flexCheckDefault">
+              Sport
+              <p class="form__p">(10)</p>
+          </label>
+        </div>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          >
+          <label class="form__check-label"     for="flexCheckChecked">
+            SUV
+            <p class="form__p">(12)</p>
+          </label>
+        </div>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault">
+          <label
+            class="form__check-label" for="flexCheckDefault">
+              MPV
+              <p class="form__p">(16)</p>
+          </label>
+        </div>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault">
+          <label
+            class="form__check-label" for="flexCheckDefault">
+              Sedan
+              <p class="form__p">(20)</p>
+          </label>
+        </div>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault">
+          <label
+            class="form__check-label" for="flexCheckDefault">
+              Coupe
+              <p class="form__p">(14)</p>
+          </label>
+        </div>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault">
+          <label
+            class="form__check-label" for="flexCheckDefault">
+              Hatchback
+              <p class="form__p">(14)</p>
+          </label>
+        </div>
+        </div>
+        <div class="form__section">
+          <p class="form__title">
+          Capasity
+        </p>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+            checked>
+          <label
+            class="form__check-label" for="flexCheckDefault">
+              2 Person
+              <p class="form__p">(10)</p>
+          </label>
+        </div>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault">
+          <label
+            class="form__check-label" for="flexCheckDefault">
+              4 Person
+              <p class="form__p">(14)</p>
+          </label>
+        </div>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault">
+          <label
+            class="form__check-label" for="flexCheckDefault">
+              6 Person
+              <p class="form__p">(12)</p>
+          </label>
+        </div>
+        <div class="form__check">
+          <input 
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+            checked>
+          <label
+            class="form__check-label" for="flexCheckDefault">
+              8 or More
+              <p class="form__p">(16)</p>
+          </label>
+        </div>
+        </div>
+        <div class="form__section">
+          <p class="form__title">
+            Price
+          </p>
+          <input 
+            class="form_scroll"
+            type="range" 
+            name="rangeInput" 
+            min="0" max="150" 
+            value="100"
+            onchange="updateTextInput(this.value);"
+          >
+          <input
+            class="form__check-label form__range"
+            type="text" 
+            id="textInput"
+            value="Max. $100.00">  
+        </div>
+            </form>
+          </aside>          
+        </div>
+      </div>
+      <main class="col-md-8 col-lg-9 p-0">
+        <div class="page">
+          <section class="inform row">
+            <div class="inform__illustr col">
+              <img w-100 src="./imgs/imgs/View.svg" alt="car" class="img-fluid">
+              <div class="inform__slider">
+                <div class="inform__img">
+                  <img src="./imgs/imgs/View 1.svg" alt="car" class="inform__img">
+                </div>
+                <div class="inform__img">
+                  <img src="./imgs/imgs/View 2.svg" alt="car" class="inform__img">
+                </div>
+                <div class="inform__img">
+                  <img src="./imgs/imgs/View 3.svg" alt="car" class="inform__img">
+                </div>
+              </div>
+            </div>
+            <div class="product col">
+              <h2 class="product__name">
+                Nissan GT - R
+              </h2>
+              <div class="product__response">
+                <div class="stars stars--4">
+                  <span class="stars__star"></span>
+                  <span class="stars__star"></span>
+                  <span class="stars__star"></span>
+                  <span class="stars__star"></span>
+                  <span class="stars__star"></span>
+                </div>
+                <span >440+ Reviewer</span>
+              </div>
+              <main class="product__info">
+                NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
+              </main>
+              <div class="product__char">
+                <p class="product__char-name">Type Car</p>
+                <p class="product__char-text">Sport</p>
+                <p class="product__char-name">Capacity</p>
+                <p class="product__char-text">2 Person</p>
+              </div>
+              <div class="product__char">
+                <p class="product__char-name">Steering</p>
+                <p class="product__char-text">Manual</p>
+                <p class="product__char-name">Gasoline</p>
+                <p class="product__char-text">70L</p>
+              </div>
+
+              <div class="product__price">
+                <div>
+                  <p class="product__price-value">
+                    $ 80.00/
+                  </p>
+                  <s class="product__price-past">
+                    $ 100.00
+                  </s>
+                </div>
+                <div>
+                  <a href="#rent" class="btn btn-primary">Rent Now</a>
+                </div> 
+              </div>
+            </div>
+        </section>
+
+        <section class="responses">
+          <div class="responses__title">
+            <p class="responses__reviews">Reviews</p>
+            <div class="responses__btn">
+              13
+            </div>
+          </div>
+          <main>
+            <div class="comments">
+              <div class="comment">
+                <div class="comment_img">
+                  <img src="./imgs/imgs/Profill.svg" class="comment__img">
+                </div>
+                <div class="comment__main">
+                  <div class="comment__top">
+                    <div>
+                      <p class="comment__title">
+                        Alex Stanton
+                      </p>
+                      <p class="comment__position">
+                        CEO at Bukalapak
+                      </p>
+                    </div>
+                    <div>
+                      <p class="comment__position">
+                        21 July 2022
+                      </p>
+                      <div class="stars stars--4">
+                        <span class="stars__star"></span>
+                        <span class="stars__star"></span>
+                        <span class="stars__star"></span>
+                        <span class="stars__star"></span>
+                        <span class="stars__star"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment__body d-md-block d-none">
+                  We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                </div>
+                <div class="comment__body d-md-none d-block">
+                  We are very happy with the service from the MORENT App. Morent has a low price...
+                </div>      
+                </div> 
+              </div>
+              <div class="comment">
+                <div class="comment__img">
+                  <img src="./imgs/imgs/Profill (1).svg" class="comment__img">
+                </div>
+                <div class="comment__main">
+                  <div class="comment__top">
+                    <div>
+                      <p class="comment__title">
+                        Skylar Dias
+                      </p>
+                      <p class="comment__position">
+                        CEO at Amazon
+                      </p>
+                    </div>
+                    <div>
+                      <p class="comment__position">
+                        20 July 2022
+                      </p>
+                      <div class="stars stars--4">
+                        <span class="stars__star"></span>
+                        <span class="stars__star"></span>
+                        <span class="stars__star"></span>
+                        <span class="stars__star"></span>
+                        <span class="stars__star"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment__body d-md-block d-none">
+                  We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                </div>
+                <div class="comment__body d-md-none d-block">
+                  We are greatly helped by the services of the MORENT Application. Morent has low...
+                </div>      
+                </div> 
+              </div>
+            </div>
+          </main>
+          <button class="all">
+            <p class="all__txt">
+              Show All
+            </p>
+            <img src="./imgs/icons/arrow.svg" alt="open" />
+          </button>
+        </section>
+        <section class="catalogs">
+          <div class="catalog">
+            <div class="catalog__top">
+              <div class="catalog__name">
+                Recent Car
+              </div>
+              <button class="btn-bd-primary btn-all">
+                View All
+              </button>
+            </div>
+            <div class="catalog__body row">
+              <div class="card1 col">
+                <div class="card1__top">
+                  <div class="card1__title">
+                  <h1 class="card1__name">
+                    Koenigsegg
+                    <p class="card1__name-after1">
+                      Sport
+                    </p>
+                  </h1>
+                  <div class="card1__like-active"></div>
+                </div>
+                <img src="./imgs/imgs/Car.jpg" alt="car" />
+                </div>
+                <div class="card1__icons">
+                  <div class="card1__icon">
+                    <div class="card1__engine"></div>
+                    90L
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__type"></div>
+                    Manual
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__capacity"></div>
+                    2 People
+                  </div>
+                </div>
+                <div class="card1__price">
+                  <div>
+                    <div class="card1__name card1__price-value">
+                      $ 99.00/
+                    </div>
+                  </div>
+              <div>
+                <a href="#rent" class="btn btn-primary">Rent Now</a>
+              </div> 
+            </div>
+              </div>
+              <div class="card1 col d-none d-lg-flex">
+                <div class="card1__top">
+                  <div class="card1__title">
+                  <h1 class="card1__name">
+                    Nissan GT - R
+                    <p class="card1__name-after1">
+                      Sport
+                    </p>
+                  </h1>
+                  <div class="card1__like"></div>
+                </div>
+                <img src="./imgs/imgs/Car (1).jpg" alt="car" />
+                </div>
+                <div class="card1__icons">
+                  <div class="card1__icon">
+                    <div class="card1__engine"></div>
+                    80L
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__type"></div>
+                    Manual
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__capacity"></div>
+                    2 People
+                  </div>
+                </div>
+                <div class="card1__price">
+                  <div>
+                    <div class="card1__name card1__price-value">
+                      $ 80.00/
+                    </div>
+                    <s class="card1__price-past">
+                      $ 100.00
+                    </s>
+                  </div>
+                  <div>
+                    <a href="#rent" class="btn btn-primary">Rent Now</a>
+                  </div> 
+            </div>
+              </div>
+              <div class="card1 col d-none d-lg-flex">
+                <div class="card1__top">
+                  <div class="card1__title">
+                  <h1 class="card1__name">
+                    Rolls-Royce
+                    <p class="card1__name-after1">
+                      Sport
+                    </p>
+                  </h1>
+                  <div class="card1__like"></div>
+                </div>
+                <img src="./imgs/imgs/Car (2).jpg" alt="car" />
+                </div>
+                <div class="card1__icons">
+                  <div class="card1__icon">
+                    <div class="card1__engine"></div>
+                    70L
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__type"></div>
+                    Manual
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__capacity"></div>
+                    4 People
+                  </div>
+                </div>
+                <div class="card1__price">
+                  <div>
+                    <div class="card1__name card1__price-value">
+                      $ 96.00/
+                    </div>
+                  </div>
+              <div>
+                <a href="#rent" class="btn btn-primary">Rent Now</a>
+              </div> 
+            </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog">
+            <div class="catalog__top">
+              <div class="catalog__name-blue">
+                Recomendation Car
+              </div>
+              <button class="btn-bd-primary btn-all">
+                View All
+              </button>
+            </div>
+            <div class="catalog__body row">
+              <div class="card1 col">
+                <div class="card1__top">
+                  <div class="card1__title">
+                  <h1 class="card1__name">
+                    All New Rush
+                    <p class="card1__name-after1">
+                      SUV
+                    </p>
+                  </h1>
+                  <div class="card1__like"></div>
+                </div>
+                <img src="./imgs/imgs/Car (3).jpg" alt="car" />
+                </div>
+                <div class="card1__icons">
+                  <div class="card1__icon">
+                    <div class="card1__engine"></div>
+                    70L
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__type"></div>
+                    Manual
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__capacity"></div>
+                    6 People
+                  </div>
+                </div>
+                <div class="card1__price">
+                  <div>
+                    <div class="card1__name card1__price-value">
+                      $ 72.00/
+                    </div>
+                    <s class="card1__price-past">
+                      $ 80.00
+                    </s>
+                  </div>
+                  <div>
+                    <a href="#rent" class="btn btn-primary">Rent Now</a>
+                  </div> 
+            </div>
+              </div>
+              <div class="card1 col d-none d-lg-flex">
+                <div class="card1__top">
+                  <div class="card1__title">
+                  <h1 class="card1__name">
+                    CR - V
+                    <p class="card1__name-after1">
+                      SUV
+                    </p>
+                  </h1>
+                  <div class="card1__like-active"></div>
+                </div>
+                <img src="./imgs/imgs/Car (4).jpg" alt="car" />
+                </div>
+                <div class="card1__icons">
+                  <div class="card1__icon">
+                    <div class="card1__engine"></div>
+                    80L
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__type"></div>
+                    Manual
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__capacity"></div>
+                    6 People
+                  </div>
+                </div>
+                <div class="card1__price">
+                  <div>
+                    <div class="card1__name card1__price-value">
+                      $ 80.00/
+                    </div>
+                  </div>
+              <div>
+                <a href="#rent" class="btn btn-primary">Rent Now</a>
+              </div> 
+            </div>
+              </div>
+             <div class="card1 col d-none d-lg-flex">
+                <div class="card1__top">
+                  <div class="card1__title">
+                  <h1 class="card1__name">
+                    All New Terios
+                    <p class="card1__name-after1">
+                      SUV
+                    </p>
+                  </h1>
+                  <div class="card1__like"></div>
+                </div>
+                <img src="./imgs/imgs/Car (5).jpg" alt="car" />
+                </div>
+                <div class="card1__icons">
+                  <div class="card1__icon">
+                    <div class="card1__engine"></div>
+                    90L
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__type"></div>
+                    Manual
+                  </div>
+                  <div class="card1__icon">
+                    <div class="card1__capacity"></div>
+                    4 People
+                  </div>
+                </div>
+                <div class="card1__price">
+                  <div>
+                    <div class="card1__name card1__price-value">
+                      $ 74.00/
+                    </div>
+                  </div>
+              <div>
+                <a href="#rent" class="btn btn-primary">Rent Now</a>
+              </div> 
+            </div>
+              </div>
+            </div>
+          </div>   
+        </section>
+      </div>
+
+      </main>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__section footer__section-1 row">
+          <div class="footer__about-company col">
+            <a class="navbar__brand footer__brand" href="#">
+              Morent
+            </a>
+            <div class="footer__text">
+              Our vision is to provide convenience 
+            </br>
+              brand help increase your sales business.
+            </div>
+          </div>
+          <nav class="foter__nav nav col row">
+            <ul class="nav__list col order-sm-1">
+              <h4 class="nav__title">
+                About
+              </h4>
+              <li class="nav__item--footer">
+                <a href="#how-it-works" class="nav__link">How it works</a>
+              </li>
+              <li class="nav__item--footer">
+                <a href="#featured" class="nav__link">Featured</a>
+              </li>
+              <li class="nav__item--footer">
+                <a href="#partnership" class="nav__link">Partnership</a>
+              </li>
+              <li class="nav__item--footer">
+                <a href="#bussines-relation" class="nav__link">Bussines Relation</a>
+              </li>
+            </ul>
+            <ul class="nav__list col order-last">
+              <h4 class="nav__title">
+                Community
+              </h4>
+              <li class="nav__item--footer">
+                <a href="#events" class="nav__link">Events</a>
+              </li>
+              <li class="nav__item--footer">
+                <a href="#blog" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item--footer">
+                <a href="#podcast" class="nav__link">Podcast</a>
+              </li>
+              <li class="nav__item--footer">
+                <a href="#invite" class="nav__link">Invite a friend</a>
+              </li>
+            </ul>
+            <ul class="nav__list col order-lg-last">
+              <h4 class="nav__title">
+                Socials
+              </h4>
+              <li class="nav__item--footer">
+                <a href="https://discord.com/" class="nav__link"
+                  target="_blank">
+                  Discord
+                  </a>
+              </li>
+              <li class="nav__item--footer">
+                <a href="https://www.instagram.com/" class="nav__link"
+                  target="_blank">
+                  Instagram
+                  </a>
+              </li>
+              <li class="nav__item--footer">
+                <a href="https://twitter.com/" class="nav__link"
+                  target="_blank">
+                  Twitter
+                  </a>
+              </li>
+              <li class="nav__item--footer">
+                <a href="https://uk-ua.facebook.com/" class="nav__link"
+                  target="_blank">
+                  Facebook
+                  </a>
+              </li>
+            </ul>
+          </nav>
+        
+        </div>
+        <div class="footer__section footer__section-2">
+          <div class="footer__mark--black order-last">
+            ©2022 MORENT. All rights reserved
+          </div>
+          <div class="nav__items order-md-last">
+            <div>
+            <a href="#Privacy" class="nav__link--black nav__link">Privacy & Policy</a>
+          </div>
+          <div>
+            <a href="#Terms" class="nav__link--black nav__link">Terms & Condition</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>

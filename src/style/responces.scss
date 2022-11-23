@@ -1,0 +1,119 @@
+.responses {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    margin-top: 32px;
+
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__reviews {
+        font-family: $main-font;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: -0.02em;
+        margin: 0;
+    }
+
+    &__btn {
+        height: 28px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #3563E9;
+        border-radius: 4px;
+    }
+}
+
+
+.comments {
+    padding-top: 32px;
+    padding-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.comment {
+    display: flex;
+    gap: 16px;
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 44px;
+        height: 44px;
+    }
+
+    &__title {
+        font-family: $main-font;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        color: $font-color;
+
+        @include onMobile() {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__position {
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #90A3BF;
+
+        @include onMobile() {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    &__body {
+        font-family: $main-font;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: -2%;
+        color: #3D5278;
+
+        @include onMobile() {
+            font-size: 12px;
+            line-height: 24px;
+        }
+    }
+}
+
+.all {
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+
+    &__txt {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #90A3BF;
+        padding: 0;
+        margin: 0;
+    }
+}

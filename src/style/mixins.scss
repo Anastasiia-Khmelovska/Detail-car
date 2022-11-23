@@ -1,0 +1,28 @@
+@mixin square($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin onDesktop {
+    @media (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin onTablet {
+    @media (min-width: 640px) {
+        @content;
+    }
+}
+
+@mixin onTabletH {
+    @media (max-width: 950px) {
+        @content;
+    }
+}
+
+@mixin onMobile {
+    @media (max-width: 639px) {
+        @content;
+    }
+}

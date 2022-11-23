@@ -1,0 +1,170 @@
+.catalogs {
+    background: #F6F7F9;
+    padding-bottom: 42px;
+    padding-top: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.catalog {
+    background: #F6F7F9;
+
+    &__top {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 16px;
+        color: #90A3BF;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+
+    &__body {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        display: flex;
+        gap: 32px;
+    }
+
+    &__name-blue {
+        color: $main-blue;
+    }
+}
+
+.card1 {
+    border: none;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:hover {
+        transform: scale(105%);
+        transition: transform 0.5s;
+    }
+
+    &__top {
+        display: flex;
+        flex: 45%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
+        font-family: $main-font;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        color: $font-color;
+    }
+
+    &__name-after1 {
+        font-family: $main-font;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: #90A3BF;
+        margin: 0;
+    }
+
+    &__name-after2 {
+        font-family: $main-font;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: #90A3BF;
+        margin: 0;
+    }
+
+
+    &__like-active {
+        background-image: url(../imgs/icons/Vector\ 3.svg);
+        width: 20px;
+        height: 18px;
+        margin-bottom: 3px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__like {
+        background-image: url(../imgs/icons/like-no-active.svg);
+        width: 21px;
+        height: 19px;
+        margin-bottom: 3px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__img {
+        height: 119px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 28px;
+        padding-bottom: 36px;
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #90A3BF;
+        margin: 0;
+    }
+
+
+    &__engine {
+        content: url(../imgs/icons/bag.svg);
+    }
+
+    &__icon {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__type {
+        content: url(../imgs/icons/wheel.svg);
+    }
+
+    &__capacity {
+        content: url(../imgs/icons/profile.svg);
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__price-value::after {
+        content: "days";
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        color: #90A3BF;
+    }
+
+    &__price-past {
+        font-family: $main-font;
+        font-size: 12px;
+        font-weight: 700;
+        color: #90A3BF;
+    }
+}
